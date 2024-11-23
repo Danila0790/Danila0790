@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Alumnos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: darkcyan;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: darkcyan;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            color: darkcyan;
+        }
+        .formulario {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .formulario label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .formulario input, .formulario select, .formulario button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .materiales {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .material {
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            flex: 1 1 calc(33% - 40px);
+        }
+        footer {
+            background-color: darkcyan;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Alumnos</h1>
+        <p>Bienvenidos al sitio Web Alumno del IES Integración de las Américas - anexo Alderetes</p>
+    </header>
+    <nav>
+        <a href="#matriculacion">Matriculación</a>
+        <a href="#materiales">Materiales de estudio</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="matriculacion">
+        <h2>Matriculación a materias</h2>
+        <form class="formulario" action="/matricular" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+
+            <label for="carrera">Carrera:</label>
+            <select id="carrera" name="carrera" required>
+                <option value="">Seleccione su carrera</option>
+                <option value="computacion-redes">Técnico Superior en Computación y Redes</option>
+                <option value="otra-carrera">Otra carrera</option>
+            </select>
+
+            <label for="materias">Materias a matricular:</label>
+            <select id="materias" name="materias[]" multiple required>
+                <option value="redes1">Redes I</option>
+                <option value="programacion1">Programación I</option>
+                <option value="base-datos">Bases de Datos</option>
+                <option value="seguridad">Seguridad Informática</option>
+            </select>
+
+            <button type="submit">Matricularse</button>
+        </form>
+    </section>
+    <section id="materiales">
+        <h2>Materiales de Estudio</h2>
+        <div class="materiales">
+            <div class="material">
+                <h3>Redes I</h3>
+                <p>Guía de ejercicios iniciales</p>
+                <a href="/materiales/redes1.pdf" download>Descargar</a>
+            </div>
+            <div class="material">
+                <h3>Programación I</h3>
+                <p>Introducción a JavaScript</p>
+                <a href="/materiales/programacion1.pdf" download>Descargar</a>
+            </div>
+            <div class="material">
+                <h3>Bases de Datos</h3>
+                <p>Manual de SQL</p>
+                <a href="/materiales/base-datos.pdf" download>Descargar</a>
+            </div>
+        </div>
+    </section>
+    <footer id="contacto">
+        <p>© 2024 @Danila_07 - Todos los derechos reservados</p>
+        <p>Email: iesalderetes@gmail.com | Tel: +54 381 3936 456</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Constitucion{width: 75%;
+}
+.equipo{margin: 10px;
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    justify-content: space-around;
+}
+.equipo h2{font-size: 30px;
+text-shadow: 2px 2px 0 orange;
+text-align: center;
+margin: 15px;
+}
+.equipo p{text-align: justify;
+margin: 10px;
+}
+.gal-doc{display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    align-items: center;
+    width: 100%;
+    }
+.doc-1{border: 3px double darkblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.docentes{display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.docente{border: 2px solid teal;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.part{width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part img{width: 100%;
+    height: 120px;
+    overflow: scroll;
+    opacity: 0.6;
+    background-size: cover;
+}
+.docentes .docente{position: relative;
+    z-index: 1;
+}
+.docentes .docente:hover{border-radius: 50%;
+}
+.descripcion{border: 2px solid lightseagreen;
+    border-radius: 20px;
+    background: linear-gradient(to right, teal, aquamarine, lightcyan);
+}
+.docentes .docente .descripcion{position: absolute;
+        top: 10px;
+        z-index: 1;
+        background: white;
+        color: white;
+        padding: 6px 14px;
+        font-weight: 500;
+        border-radius: 25px;
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: rgba(0, 0, 0, 0.17), 0 px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        width: 220px;
+}
+.docentes .docente:hover .descripcion{top: -100px;
+    opacity: 1;
+    pointer-events: auto;
+    color: black;
+    width: 300px;
+    background: linear-gradient(to right, teal, aquamarine, lightcyan);
+}
+.docentes .docente:hover .part img{border-radius: 50%;
+    opacity: 1;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out, border-radius 0.3s;
+}

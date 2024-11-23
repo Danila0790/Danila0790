@@ -1,0 +1,67 @@
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contacto {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.contacto h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.medios{border: 4px double darkcyan;
+    width: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(270deg,darkcyan, lightseagreen, aqua, turquoise,lightcyan,lightgray);
+}
+.formulario-contacto, .informacion-contacto {
+    margin-bottom: 30px;
+}
+.informacion-contacto {
+    text-align: center;
+}
+.informacion-contacto p {
+    margin: 5px 0;
+}
+form{display: flex;
+flex-direction: column;
+justify-content: center;
+width: 400px;
+}
+form, .medio-fisico {
+    max-width: 600px;
+    margin: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    ;
+}
+form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: cyan;
+    box-shadow: 5px 5px 10px gray;
+    color: black;
+}

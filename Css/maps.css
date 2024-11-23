@@ -1,0 +1,32 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{background: linear-gradient(to right, #616161, #9bc5c3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-maps{border-radius: 10px;
+    background: lightgray;
+    margin:20px auto;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+    .content-maps h2{color: teal;
+        text-shadow: 5px 2px 0 white;
+        font-size: 40px;
+    }
+    .content-maps iframe{border-radius: 20px;
+        box-shadow: 10px 5px 20px cyan;
+    }
+    button{width: 60px;
+        height: 30px;
+        background: rgb(184, 36, 10);
+        color: white;
+    }

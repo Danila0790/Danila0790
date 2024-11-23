@@ -1,0 +1,57 @@
+.carreras{width: 75%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 5px;
+}
+dt{text-align: center;
+    margin: 15px;
+    text-shadow: 1px -2px 0 darkcyan;
+}
+dd{text-align: justify;
+    }
+.perfil{border: 2px double dimgray;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    line-height: 20px;
+    background: white;
+    width: 100%;
+}
+    .perfil ul li::before{content: "📌";
+    }
+.Plan-materias{width: 100%;
+    background-color: white;
+    border: 2px solid dimgray;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.por-grado{width: 100%;
+    position: relative;
+    height: 100%;
+}
+.grado{width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+}
+.grado table{width: 100%;
+}
+table tr td{padding-left: 20px;}
+.flechas{width: 100%;
+position: absolute;
+height: 100%;
+display: flex;
+align-items: center;
+top: 0;
+justify-content: space-between;
+padding: 20px;
+}
+#primer-año{background-color: maroon;
+}
+#segundo-año{background-color: darkmagenta;
+}
+#tercer-año{background-color: deepskyblue;
+}

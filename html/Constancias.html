@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../IES.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../Css/Constancias.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2ad6fef4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="../imagenes/IES PR.ico" type="image/x-icon" />
+    <title>IES Alderetes</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="enlace"><img src="../imagenes/LogoIES1.png" alt="LogoIES" width="230px" height="90px"></a>
+        <nav class="box-header">
+            <ul class="menu">
+                <li><a href=""><img src="../imagenes/educacion.gif" alt="" width="30px" height="30px">Institución</a>
+                    <ul>
+                        <li><a href="SobreNosotros.html" target="_blank">Sobre Nosotros</a></li>
+                        <li><a href="Nuestros Docentes.html" target="_blank">Nuestros Docentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#Novedades"><img src="../imagenes/noticias.gif" alt="" width="30px" height="30px">Novedades</a></li>
+                <li><a href=""><img src="../imagenes/carrera.gif" alt="" width="30px" height="30px">Carreras</a>
+                        <ul>
+                            <li><a href="TecnicoSuperiorenComputacionyredes.html" target="_blank">Técnico Superior en Computación y Redes</a></li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="Web-alumno.html" target="_blank"><img src="../imagenes/web-alumno.gif" alt="" width="30px" height="30px">Web Alumno</a></li>
+                <li>
+                    <a href=""><img src="../imagenes/tramite.gif" alt="" width="30px" height="30px">Trámites</a>
+                        <ul>
+                            <li><a href="Constancias.html" target="_blank">Constancias</a></li>
+                            
+                        </ul>
+                </li>
+                <li><a href="Contacto.html" target="_blank"><img src="../imagenes/contacto.gif" alt="" width="30px" height="30px">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="secciones">
+            <section class="Formulario-tramite">
+                <form action="" method="post">
+                    <h1>Solicitud de trámite</h1>
+                    <p>Por favor, complete el formulario con la información requerida para iniciar su trámite.</p>
+                    <fieldset>
+                        <!--datos personales-->
+                        <legend>Datos Personales</legend>
+                        <label for="Nombre">Nombre completo:</label>
+                        <input type="text" id="Nombre" name="Nombre" required placeholder="Ingrese su Nombre" maxlength="60">
+
+                        <label for="Apellido">Apellido:</label>
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su Apellido">
+
+                        <label for="Documento">D.N.I.:</label>
+                        <input type="text" id="Documento" placeholder="xx.xxx.xxx">
+
+                    </fieldset>
+                    <fieldset><legend>Contactos</legend>
+                        <!--Teléfono -->
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de teléfono">
+
+                         <!-- Correo electrónico -->
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
+
+                    </fieldset>
+                    <fieldset><legend>Tipo de tramite a solicitar</legend>
+                        <!-- Tipo de trámite -->
+                        <label for="tipo_tramite">Tipo de trámite:</label>
+                        <select id="tipo_tramite" name="tipo_tramite" required>
+                            <option value="">Seleccione el tipo de trámite</option>
+                            <option value="Constancia de alumno Regular">Constancia de alumno Regular</option>
+                            <option value="Constancia de Estado Académico">Constancia de Estado Académico</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    
+                    </fieldset>
+                    <fieldset><legend>Información Adicional</legend>
+                        <!-- Comentarios adicionales -->
+                        <label for="comentarios">Comentarios adicionales:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escriba aquí cualquier información relevante aquí."></textarea>
+                
+                        <!-- Botón de envío -->
+                        <button type="submit">Enviar solicitud</button>
+                    </fieldset>
+                </form>
+            </section>
+            <aside>
+                <h1>¡Bienvenidos!</h1>
+                <p>Instituto de Enseñanza Superior
+                "Integración de las Américas"
+                Tecnicatura Superior en Computación y Redes,
+                Extensión Áulica Alderetes.</p>
+                <a href="login.html">
+                    <button class="box-header">
+                        Iniciar Sesión
+                    </button>
+                </a>
+                <h2>Para saber más, haz click en el botón</h2>
+                <a href="#popup" id="open-popup"><button class="open-popup" onclick="openPopup()">Requisitos para inscripción</button></a>
+                <div id="popup" class="overlay">
+                    <div class="popup-content">
+                        <h2>Documentación necesaria para la inscripción:</h2>
+                        <ol>
+                            <li>Fotocopia del DNI.</li>
+                            <li>Fotocopia de acta de nacimiento.</li>
+                            <li>Fotocopia del título secundario o constancia de finalización de estudios.</li>
+                            <li>Constancia de CUIL.</li>
+                            <li>Foto carnet 4x4.</li>
+                        </ol>   
+                        <a href="Constancias.html" id="cerrar"><button class="close-btn" onclick="closePopup()">Cerrar</button></a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="Social">
+            <div class="icons" id="Facebook">
+                <div class="tooltip">
+                    Facebook
+                </div>
+                <span>
+                    <a href="https://www.facebook.com/profile.php?id=61568239205598" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="icons" id="Instagram">
+                <div class="tooltip">
+                    Instagram
+                </div>
+                <span>
+                    <a href="https://www.instagram.com/ies.int.lasamericas_2023/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="icons" id="Whatsapp">
+                <div class="tooltip">
+                    Whatsapp
+                </div>
+                <span>
+                    <a href="https://w.app/WJ67Dr" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="icons" id="Youtube">
+                <div class="tooltip">
+                    Youtube
+                </div>
+                <span>
+                    <a href="https://www.youtube.com/@iesAlderetes" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="icons" id="Maps">
+                <div class="tooltip">
+                    Google Maps
+                </div>
+                <span>
+                    <a href="google-maps.html" target="_blank">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <p>© 2024 @Danila_07. Todos los derechos se encuentran reservados.</p>
+        <p>Email: iesalderetes@gmail.com | Tel: +54 381 3936 456</p>
+    </footer>
+</body>
+</html>
